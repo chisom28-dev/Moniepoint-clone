@@ -1,0 +1,1039 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Business Banking- Business Banking</title>
+  <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+  <style>
+    .product-container:hover .product-dropdown{
+      display: flex;
+    } 
+
+    
+    .product-dropdown{
+      display:none;
+    }
+
+
+      .company-container:hover .company-dropdown{
+      display: flex;
+    } 
+
+    
+    .company-dropdown{
+      display:none;
+    }
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.group {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+  will-change: transform; 
+}
+
+.group img {
+  pointer-events: none; 
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} 
+
+
+  </style>
+</head>
+<body>
+
+
+ <div class="fixed w-full z-30 ">
+   <div class=" bg-black text-white py-4 text-[14px] flex justify-center gap-14 w-full max-sm:text-[15px] max-[510px]:hidden">
+<div class="max-sm:w-[50%] max-sm:text-center  border-none border-amber-400"> <p>This website uses cookies to enhance your experience. Learn more here:</p></div>
+<div class="flex gap-10 font-bold text-[14px] max-sm:text-center max-sm:w-[30%] ">
+  <p>Privacy Policy</p>
+  <p>Cookie Policy</p>
+</div>
+  </div>
+
+   <!-- Second Header -->
+
+  <div class="w-full hidden max-[1064px]:block z-50">
+<div class="w-full flex justify-between text-white border-1 border-black">
+  <div class="w-[50%] bg-[#092256] text-center py-4">Business</div>
+  <div class="w-[50%] bg-[#031335] text-center py-4 text-gray-200">Personal</div>
+</div>
+
+
+<div class="w-full flex justify-between bg-[#031335] py-4 max-md:py-[10px]">
+  <div class="w-[50%] flex items-center"><img width="150px" src="images/logo-mfb-white.png " alt="logo" class="max-md:w-[120px] ml-5"></div>
+  <div class="w-[50%] flex justify-end mr-4"><i class="bi bi-list text-white text-[28px] mr-5"></i></div>
+</div>
+
+
+  </div>
+
+<header class="w-full h-[10vh] bg-[#031335] max-[1064px]:hidden">
+ <div class="w-[97%] m-auto h-full flex items-center justify-between">
+
+   <div class=" flex text-white border-none border-amber-400 gap-6">
+    <div class="shrink-0"> <img width="150px" src="images/logo-mfb-white.png" alt="logo"></div>
+    <div class="flex items-center gap-6">
+      <div class="bg-[#35425d] py-[5px] px-3 rounded-4xl">Business</div>
+      <div class=" rounded-4xl px-3 py-[5px] hover:bg-[#35425d]">Personal</div>
+    </div> 
+  </div>
+
+
+
+  <div class=" border-none border-amber-400 text-white flex gap-[40px] text-[13px] items-center">
+
+    <div class="border-none border-red-800 flex gap-12">
+      <div class="relative product-container">
+              <a href="">Products <i class="bi bi-chevron-down"></i></a>
+
+                <!-- product drop-down -->
+
+        <div class="w-[750px] h-[330px] absolute rounded-[12px] bg-white right-[-400px] flex justify-center product-dropdown z-40 shadow-2xl">
+           <div class="w-[50%] border-none border-amber-400 rounded-2xl h-full flex flex-col items-center justify-center gap-[10px] p-[15px]">
+
+            <div class="h-[20%] rounded-[8px] w-[95%] bg-[#c4e9fd] flex flex-col justify-center cursor-pointer p-[10px]">
+              <h1 class="font-bold text-[#031335] text-[17px]">Banking</h1>
+              <p class=" text-gray-600 text-[12px]">Business and personal banking account</p>
+            </div>
+
+             <div class="h-[20%] rounded-[8px] w-[95%] hover:bg-[#c4e9fd] flex flex-col justify-center cursor-pointer p-[10px]">
+              <h1 class="font-bold text-[#031335] text-[17px]">Credit</h1>
+              <p class=" text-gray-600 text-[12px]">Business and individual loans</p>
+            </div>
+
+             <div class="h-[20%] rounded-[8px] w-[95%] hover:bg-[#c4e9fd] flex flex-col justify-center cursor- p-[10px]">
+              <h1 class="font-bold text-[#031335] text-[17px]">Payments</h1>
+              <p class=" text-gray-600 text-[12px]">Accepts payments from Anywhere</p>
+            </div>
+
+             <div class="h-[20%] rounded-[8px] w-[95%] hover:bg-[#c4e9fd] flex flex-col justify-center cursor-pointer p-[10px]">
+              <h1 class="font-bold text-[#031335] text-[17px]">Business and Management</h1>
+              <p class=" text-gray-600 text-[12px]">Easy business management & report</p>
+            </div>
+
+           </div>
+           <div class="w-[50%] border-none border-amber-400 rounded-2xl h-full p-[15px]">
+
+            
+             <div class="h-[20%] rounded-[8px] w-[95%] hover:bg-[#c4e9fd] flex gap-3 cursor-pointer p-[10px] items-center">
+
+              <div class="bg-[#b0d3ec] p-[8px] rounded-[10px] text-white"><svg width="18" height="18" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_3359_15500" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><rect width="16" height="16" fill="#D9D9D9"></rect></mask><g mask="url(#mask0_3359_15500)"><path d="M1.3335 12.6667V3.33333C1.3335 2.96667 1.46405 2.65278 1.72516 2.39167C1.98627 2.13056 2.30016 2 2.66683 2H6.66683C7.0335 2 7.34739 2.13056 7.6085 2.39167C7.86961 2.65278 8.00016 2.96667 8.00016 3.33333V4.66667H13.3335C13.7002 4.66667 14.0141 4.79722 14.2752 5.05833C14.5363 5.31944 14.6668 5.63333 14.6668 6V12.6667C14.6668 13.0333 14.5363 13.3472 14.2752 13.6083C14.0141 13.8694 13.7002 14 13.3335 14H2.66683C2.30016 14 1.98627 13.8694 1.72516 13.6083C1.46405 13.3472 1.3335 13.0333 1.3335 12.6667ZM2.66683 12.6667H4.00016V11.3333H2.66683V12.6667ZM2.66683 10H4.00016V8.66667H2.66683V10ZM2.66683 7.33333H4.00016V6H2.66683V7.33333ZM2.66683 4.66667H4.00016V3.33333H2.66683V4.66667ZM5.3335 12.6667H6.66683V11.3333H5.3335V12.6667ZM5.3335 10H6.66683V8.66667H5.3335V10ZM5.3335 7.33333H6.66683V6H5.3335V7.33333ZM5.3335 4.66667H6.66683V3.33333H5.3335V4.66667ZM8.00016 12.6667H13.3335V6H8.00016V7.33333H9.3335V8.66667H8.00016V10H9.3335V11.3333H8.00016V12.6667Z" fill="#092256"></path><path d="M10.667 7.33337V8.66671H12.0003V7.33337H10.667Z" fill="#0357EE"></path><path d="M10.667 10V11.3334H12.0003V10H10.667Z" fill="#0357EE"></path></g></svg></div>
+
+              <div class="flex flex-col justify-center">
+              <h1 class="font-bold text-[#031335] text-[17px]">Business Account</h1>
+              <p class=" text-gray-600 text-[12px]">Get a free bank account to power your business</p></div>
+            </div>
+
+            
+             <div class="h-[20%] rounded-[8px] w-[95%] hover:bg-[#c4e9fd] flex gap-3  cursor-pointer p-[10px]">
+            
+              <div class="bg-[#b0d3ec] rounded-[8px] flex justify-center items-center">
+                <svg width="30" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_3359_15500" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="10"><rect width="16" height="10" fill="#D9D9D9"></rect></mask><g mask="url(#mask0_3359_15500)"><path d="M13.4242 10.0129H10.5575L11.0442 7.35428H13.4242C13.601 7.35428 13.7705 7.28426 13.8956 7.15961C14.0206 7.03496 14.0908 6.8659 14.0908 6.68963C14.0908 6.51335 14.0206 6.34429 13.8956 6.21964C13.7705 6.095 13.601 6.02497 13.4242 6.02497H11.2842L11.7442 3.49263C11.7623 3.40377 11.7621 3.31214 11.7434 3.22338C11.7247 3.13462 11.688 3.05061 11.6356 2.97652C11.5831 2.90243 11.516 2.83982 11.4384 2.79256C11.3607 2.74529 11.2742 2.71437 11.1842 2.70169C11.0946 2.68042 11.0016 2.67787 10.911 2.69421C10.8204 2.71055 10.7342 2.74542 10.6578 2.79662C10.5814 2.84782 10.5164 2.91425 10.467 2.99171C10.4176 3.06917 10.3849 3.156 10.3708 3.24671L9.87082 6.02497H7.28415L7.74415 3.49263C7.76233 3.40377 7.76207 3.31214 7.7434 3.22338C7.72473 3.13462 7.68804 3.05061 7.63558 2.97652C7.58312 2.90243 7.51601 2.83982 7.43837 2.79256C7.36074 2.74529 7.27423 2.71437 7.18415 2.70169C7.09459 2.68042 7.00159 2.67787 6.91099 2.69421C6.8204 2.71055 6.73418 2.74542 6.65777 2.79662C6.58136 2.84782 6.51642 2.91425 6.46703 2.99171C6.41764 3.06917 6.38489 3.156 6.37082 3.24671L5.87082 6.02497H2.75749C2.58068 6.02497 2.41111 6.095 2.28608 6.21964C2.16106 6.34429 2.09082 6.51335 2.09082 6.68963C2.09082 6.8659 2.16106 7.03496 2.28608 7.15961C2.41111 7.28426 2.58068 7.35428 2.75749 7.35428H5.62415L5.13749 10.0129H2.75749C2.58068 10.0129 2.41111 10.0829 2.28608 10.2076C2.16106 10.3322 2.09082 10.5013 2.09082 10.6776C2.09082 10.8538 2.16106 11.0229 2.28608 11.1475C2.41111 11.2722 2.58068 11.3422 2.75749 11.3422H4.89749L4.43749 13.8746C4.41931 13.9634 4.41957 14.0551 4.43824 14.1438C4.45691 14.2326 4.49361 14.3166 4.54606 14.3907C4.59852 14.4648 4.66563 14.5274 4.74327 14.5746C4.8209 14.6219 4.90742 14.6528 4.99749 14.6655C5.08705 14.6868 5.18005 14.6893 5.27065 14.673C5.36124 14.6566 5.44746 14.6218 5.52387 14.5706C5.60028 14.5194 5.66522 14.4529 5.71461 14.3755C5.764 14.298 5.79675 14.2112 5.81082 14.1205L6.31082 11.3422H8.89749L8.43749 13.8746C8.41931 13.9634 8.41957 14.0551 8.43824 14.1438C8.45691 14.2326 8.49361 14.3166 8.54606 14.3907C8.59852 14.4648 8.66563 14.5274 8.74327 14.5746C8.8209 14.6219 8.90742 14.6528 8.99749 14.6655C9.08705 14.6868 9.18005 14.6893 9.27065 14.673C9.36124 14.6566 9.44746 14.6218 9.52387 14.5706C9.60028 14.5194 9.66522 14.4529 9.71461 14.3755C9.764 14.298 9.79675 14.2112 9.81082 14.1205L10.3108 11.3422H13.4242C13.601 11.3422 13.7705 11.2722 13.8956 11.1475C14.0206 11.0229 14.0908 10.8538 14.0908 10.6776C14.0908 10.5013 14.0206 10.3322 13.8956 10.2076C13.7705 10.0829 13.601 10.0129 13.4242 10.0129ZM6.55749 10.0129L7.04415 7.35428H9.62415L9.13749 10.0129H6.55749Z" fill="#092256"></path></g></svg>
+              </div>
+
+              <div class=" flex-col justify-center items-center">
+                  <h1 class="font-bold text-[#031335] text-[17px]">Business and Management</h1>
+              <p class=" text-gray-600 text-[12px]">Dial *5573# for easy offline banking</p>
+              </div>
+            </div>
+           </div>
+
+           <!--dropdown-end  -->
+           
+
+        </div>
+      </div>
+
+       <!--dropdown for company  -->
+
+      <div class="relative company-container">
+        <a href="">Company <i class="bi bi-chevron-down"></i></a>
+        <div class=" absolute w-[230px] h-[170px] bg-white rounded-[12px] left-[-100px] company-dropdown flex justify-center items-center flex-col border-none border-amber-400 p-[10px]">
+
+          <div class="border-none border-amber-300 w-[90%] m-auto flex gap-3  items-center">
+
+            <div class="flex items-center bg-[#b0d3ec] rounded-[8px] p-[6px]">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_354_4" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="16"><path d="M16.1816 0H0.181641V16H16.1816V0Z" fill="#D9D9D9"></path></mask><g mask="url(#mask0_354_4)"><path d="M4.84861 12.0006V9.33399L1.53191 4.36728C1.37631 4.14508 1.36521 3.91728 1.49861 3.68398C1.63191 3.45058 1.83191 3.33398 2.09861 3.33398H8.93191C9.19861 3.33398 9.39861 3.45058 9.53191 3.68398C9.66521 3.91728 9.65411 4.14508 9.49861 4.36728L6.18191 9.33399V12.0006H6.84861C7.03741 12.0006 7.19582 12.0645 7.32362 12.1923C7.45132 12.3201 7.51521 12.4784 7.51521 12.6673C7.51521 12.8562 7.45132 13.0145 7.32362 13.1423C7.19582 13.2701 7.03741 13.334 6.84861 13.334H4.18191C3.99301 13.334 3.83471 13.2701 3.70691 13.1423C3.57911 13.0145 3.51521 12.8562 3.51521 12.6673C3.51521 12.4784 3.57911 12.3201 3.70691 12.1923C3.83471 12.0645 3.99301 12.0006 4.18191 12.0006H4.84861ZM4.11521 6.00058H6.91521L7.84861 4.66728H3.18191L4.11521 6.00058Z" fill="#092256"></path><path d="M10.8477 13.334C10.2922 13.334 9.81996 13.1395 9.43106 12.7506C9.04216 12.3618 8.84766 11.8895 8.84766 11.334C8.84766 10.7784 9.04216 10.3062 9.43106 9.91728C9.81996 9.52838 10.2922 9.33399 10.8477 9.33399C10.97 9.33399 11.0866 9.34228 11.1977 9.35898C11.3088 9.37558 11.4144 9.41178 11.5144 9.46728V4.00058C11.5144 3.81178 11.5783 3.65338 11.7061 3.52558C11.8338 3.39788 11.9922 3.33398 12.1811 3.33398H13.8477C14.1255 3.33398 14.3616 3.43118 14.5561 3.62558C14.7505 3.82008 14.8477 4.05618 14.8477 4.33398C14.8477 4.61178 14.7505 4.84788 14.5561 5.04228C14.3616 5.23678 14.1255 5.33398 13.8477 5.33398H12.8477V11.334C12.8477 11.8895 12.6533 12.3618 12.2644 12.7506C11.8755 13.1395 11.4033 13.334 10.8477 13.334Z" fill="#0357EE"></path></g></svg>
+            </div>
+            <p class="font-bold text-[#031335]">Culture</p>
+           
+          </div>
+
+            <div class="border-none  border-amber-300 w-[90%] m-auto flex gap-3 items-center">
+
+              <div class="flex items-center bg-[#b0d3ec] rounded-[8px] p-[6px]">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_3359_15627" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><rect width="16" height="16" fill="#D9D9D9"></rect></mask><g mask="url(#mask0_3359_15627)"><path d="M2.66683 14C2.30016 14 1.98627 13.8695 1.72516 13.6084C1.46405 13.3473 1.3335 13.0334 1.3335 12.6667V5.33337C1.3335 4.96671 1.46405 4.65282 1.72516 4.39171C1.98627 4.1306 2.30016 4.00004 2.66683 4.00004H5.3335V2.66671C5.3335 2.30004 5.46405 1.98615 5.72516 1.72504C5.98627 1.46393 6.30016 1.33337 6.66683 1.33337H9.3335C9.70016 1.33337 10.0141 1.46393 10.2752 1.72504C10.5363 1.98615 10.6668 2.30004 10.6668 2.66671V4.00004H13.3335C13.7002 4.00004 14.0141 4.1306 14.2752 4.39171C14.5363 4.65282 14.6668 4.96671 14.6668 5.33337V12.6667C14.6668 13.0334 14.5363 13.3473 14.2752 13.6084C14.0141 13.8695 13.7002 14 13.3335 14H2.66683ZM2.66683 12.6667H13.3335V5.33337H2.66683V12.6667ZM6.66683 4.00004H9.3335V2.66671H6.66683V4.00004Z" fill="#092256"></path><path d="M6.86693 10.2667L8.13359 9.00003L6.86693 7.73337C6.7447 7.61114 6.68359 7.45559 6.68359 7.2667C6.68359 7.07781 6.7447 6.92225 6.86693 6.80003C6.98915 6.67781 7.1447 6.6167 7.33359 6.6167C7.52248 6.6167 7.67804 6.67781 7.80026 6.80003L9.53359 8.53337C9.66693 8.6667 9.73359 8.82225 9.73359 9.00003C9.73359 9.17781 9.66693 9.33337 9.53359 9.4667L7.80026 11.2C7.67804 11.3223 7.52248 11.3834 7.33359 11.3834C7.1447 11.3834 6.98915 11.3223 6.86693 11.2C6.7447 11.0778 6.68359 10.9223 6.68359 10.7334C6.68359 10.5445 6.7447 10.3889 6.86693 10.2667Z" fill="#0357EE"></path></g></svg>
+              </div>
+      
+            <p class="font-bold text-[#031335]">Careers</p>
+            
+          </div>
+            <div class="border-none  border-amber-300 w-[90%] m-auto flex gap-3 items-center">
+              
+               <div class="flex items-center bg-[#b0d3ec] rounded-[8px] p-[6px]">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_3359_15662" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16"><rect width="16" height="16" fill="#D9D9D9"></rect></mask><g mask="url(#mask0_3359_15662)"><path d="M2.66683 14C2.30016 14 1.98627 13.8694 1.72516 13.6083C1.46405 13.3472 1.3335 13.0333 1.3335 12.6667V5.33333C1.3335 5.14444 1.39738 4.98611 1.52516 4.85833C1.65294 4.73056 1.81127 4.66667 2.00016 4.66667C2.18905 4.66667 2.34738 4.73056 2.47516 4.85833C2.60294 4.98611 2.66683 5.14444 2.66683 5.33333V12.6667H12.0002C12.1891 12.6667 12.3474 12.7306 12.4752 12.8583C12.6029 12.9861 12.6668 13.1444 12.6668 13.3333C12.6668 13.5222 12.6029 13.6806 12.4752 13.8083C12.3474 13.9361 12.1891 14 12.0002 14H2.66683ZM5.3335 11.3333C4.96683 11.3333 4.65294 11.2028 4.39183 10.9417C4.13072 10.6806 4.00016 10.3667 4.00016 10V2.66667C4.00016 2.47778 4.06405 2.31944 4.19183 2.19167C4.31961 2.06389 4.47794 2 4.66683 2H14.6668C14.8557 2 15.0141 2.06389 15.1418 2.19167C15.2696 2.31944 15.3335 2.47778 15.3335 2.66667V10C15.3335 10.3667 15.2029 10.6806 14.9418 10.9417C14.6807 11.2028 14.3668 11.3333 14.0002 11.3333H5.3335ZM5.3335 10H14.0002V3.33333H5.3335V10Z" fill="#092256"></path><path d="M8.66699 7.99996H7.33366C7.14477 7.99996 6.98644 7.93607 6.85866 7.80829C6.73088 7.68052 6.66699 7.52218 6.66699 7.33329V5.33329C6.66699 5.1444 6.73088 4.98607 6.85866 4.85829C6.98644 4.73051 7.14477 4.66663 7.33366 4.66663H8.66699C8.85588 4.66663 9.01421 4.73051 9.14199 4.85829C9.26977 4.98607 9.33366 5.1444 9.33366 5.33329V7.33329C9.33366 7.52218 9.26977 7.68052 9.14199 7.80829C9.01421 7.93607 8.85588 7.99996 8.66699 7.99996Z" fill="#0357EE"></path><path d="M12.0003 7.99996H10.667C10.4781 7.99996 10.3198 7.93607 10.192 7.80829C10.0642 7.68052 10.0003 7.52218 10.0003 7.33329C10.0003 7.1444 10.0642 6.98607 10.192 6.85829C10.3198 6.73052 10.4781 6.66663 10.667 6.66663H12.0003C12.1892 6.66663 12.3475 6.73052 12.4753 6.85829C12.6031 6.98607 12.667 7.1444 12.667 7.33329C12.667 7.52218 12.6031 7.68052 12.4753 7.80829C12.3475 7.93607 12.1892 7.99996 12.0003 7.99996Z" fill="#0357EE"></path><path d="M12.0003 5.99996H10.667C10.4781 5.99996 10.3198 5.93607 10.192 5.80829C10.0642 5.68051 10.0003 5.52218 10.0003 5.33329C10.0003 5.1444 10.0642 4.98607 10.192 4.85829C10.3198 4.73051 10.4781 4.66663 10.667 4.66663H12.0003C12.1892 4.66663 12.3475 4.73051 12.4753 4.85829C12.6031 4.98607 12.667 5.1444 12.667 5.33329C12.667 5.52218 12.6031 5.68051 12.4753 5.80829C12.3475 5.93607 12.1892 5.99996 12.0003 5.99996Z" fill="#0357EE"></path></g></svg>
+               </div>
+            <p class="font-bold text-[#031335]">Press</p>
+          </div>
+        </div>
+
+      </div>
+      <a href="">About</a>
+      <a href="">Contact</a>
+      <a href="">Blog</a>
+    </div>
+
+    <div class="flex gap-4 items-center">
+      <div class=" bg-[#c4e9fd]  rounded-4xl text-black px-[10px] py-[4px] flex items-center ">Sign in <i class="bi bi-arrow-right-short text-[20px] font-bold text-center "></i></div>
+      <div><img src="images/nig.svg" alt="nigeria flag"></div>
+      <div><i class="bi bi-chevron-down"></i></div>
+    </div>
+
+  </div>
+ </div>
+</header>
+ </div>
+
+<!-- Second section -->
+ <Section class="w-full bg-[#031335] rounded-br-[50px]  rounded-bl-[50px] pb-[100px] pt-[120px] 
+ max-[1064px]:pt-[170px] max-md:pt-[200px] max-md:pb-[60px]">
+<div class="w-[97%] flex justify-between m-auto items-center max-md:w-full" >
+<div class=" w-[50%] flex flex-col  gap-3 max-md:w-full border-none border-amber-300 max-md:items-center max-md:text-center max-md:gap-6 max-[400px]:px-[5px]">
+<div>
+  <p class=" text-white bg-[#3e588e] w-fit rounded-4xl py-3 px-4 text-[13px]"> <span class="mr-2"><i class="bi bi-gear text-[#b0d3ec]"></i></span>Africa's fastest growing financial institution 2023-2025</p>
+</div>
+
+<div class="w-full">
+  <p class=" text-[50px] font-bold text-white w-[80%] max-lg:text-[30px] max-md:w-full max-md:text-[28px] max-sm:text-[24px]">Simple solutions to <span class=" text-[#b0d3ec]">Power your business</span></p>
+</div>
+
+<div class="w-full max-md:flex max-md:justify-center">
+  <p class="text-[#c3c9d5] w-[95%] text-[20px] max-lg:text-[15px] max-md:w-[70%]  border-none border-amber-400 ">Collect payments, access loans and manage operations with a
+     business banking solution that meets all your needs.</p>
+</div>
+<div class=" flex flex-col gap-5 max-md:w-full max-md:items-center">
+  <button class=" text-white  bg-[#0357ee] rounded-[12px] p-3 w-fit px-5  max-md:px-6 max-md:text-[14px]"> Open an Account <i class="bi bi-arrow-right-short"></i></button>
+  <p class="w-[70%] text-white flex gap-2 max-lg:text-[13px] max-lg:w-[85%] max-md:w-full max-md:justify-center">we are licensed by <span class="inline-block "><img src="images/naira.png" alt="naira" class="w-[20px] max-md:w-[15px]" ></span> and insured by <span class="inline-block  max-md:flex max-md:items-end"><img src="images/NDIC.png" alt="Ndic" class="w-[70px] max-md:w-[43px]"></span></p>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="w-[50%] max-md:hidden"><img src="images/hero-sub.png" alt="first-image"></div>
+
+</div>
+
+ </Section>
+
+
+
+ 
+ <!-- CAROUSEL PART-->
+
+ <!-- <section class="w-full bg-[#f6f9fc] border-4">
+ <div class=" w-[93%] bg-white rounded-3xl mx-auto border-2 ">
+  <div class="w-full flex justify-end ">
+      <div class=" flex justify-between w-[93%]  items-center ">
+       <div class=" flex gap-10"><p class="text-[#092256] text-[28px] font-bold  w-[30%]">Business that count on us</p>
+      <p class="text-[14px] text-gray-800 w-[45%]">Join <span class=" text-[#6488ee] font-medium">5 million</span> business owners on the Moniepoint platform</p>
+    </div>
+    <div class=" text-[120px]  font-bold text-transparent [-webkit-text-stroke:1px_#6488ee]">5m+</div>
+    </div>
+  </div>
+
+  <!-- Carousel part -->
+<!-- 
+  <div class="carousel flex  border-2 border-red-500 bg-[#f6f9fc]">
+    <div class="group flex gap-[10px]">
+      <div class="card"> <img src="images/biz-1.png" alt="" width="px" height=" px" class="border-1 border-gray-500 rounded-[12px]"></div>
+      <div class="card"> <img src="images/biz-2.png" alt="" width="px" height=" px" class="border-1 border-gray-500 rounded-[12px]"></div>
+      <div class="card"> <img src="images/biz-3.png" alt="" width="px" height=" px" class="border-1 border-gray-500 rounded-[12px]"></div>
+      <div class="card"> <img src="images/biz-4.png" alt="" width="px" height=" px" class="border-1 border-gray-500 rounded-[12px]"></div>
+      <div class="card"> <img src="images/biz-5.png" alt="" width="px" height=" px" class="border-1 border-gray-500 rounded-[12px]"></div>
+      <div class="card"> <img src="images/biz-6.png" alt="" width="px" height=" px" class="border-1 border-gray-500 rounded-[12px]"></div>
+      <div class="card"> <img src="images/biz-7.png" alt="" width="px" height=" px" class="border-1 border-gray-500 rounded-[12px]"></div>
+      <div class="card"> <img src="images/biz-8.png" alt="" width="px" height=" px" class="border-1 border-gray-500 rounded-[12px]"></div>
+    </div>
+  </div>
+
+
+
+ </div>
+  
+ </section>  -->
+
+ <section class="w-full bg-[#f6f9fc]  py-10 pb-0">
+  <div class="w-[93%] bg-white rounded-3xl mx-auto  p-6 relative top-[-85px]">
+     
+    <!-- Top text -->
+
+     <div class="w-full flex justify-end mb-8 max-[992px]:justify-start max-[992px]:m-3">
+      <div class="flex justify-between w-[93%] items-center  border-none border-amber-200">
+        <div class="flex gap-10 border-none border-amber-200 max-[992px]:flex-col max-[992px]:gap-4 ">
+          <p class="text-[#092256] text-[28px] font-bold w-[30%] max-[992px]:text-[20px] max-[992px]:w-full">
+            Businesses that count on us
+          </p>
+          <p class="text-[14px] text-gray-800 w-[45%] max-[992px]:w-full max-sm:w-[90%]">
+            Join <span class="text-[#6488ee] font-medium">5 million</span> business owners on the Moniepoint platform
+          </p>
+        </div>
+        <div class="text-[120px] font-bold text-transparent [-webkit-text-stroke:1px_#6488ee] max-[992px]:hidden">
+          5m+
+        </div>
+      </div>
+    </div> 
+
+    <!-- ✅ Carousel -->
+    <div class="carousel overflow-x-auto whitespace-nowrap">
+      <div class="group flex flex-nowrap gap-4 px-4 py-6">
+        
+        <!-- Cards -->
+        <div class="card shrink-0">
+          <img src="images/biz-1.png" alt="Business 1" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-2.png" alt="Business 2" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-3.png" alt="Business 3" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-4.png" alt="Business 4" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-5.png" alt="Business 5" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-6.png" alt="Business 6" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-7.png" alt="Business 7" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-8.png" alt="Business 8" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+
+          
+            
+        <!--  Duplicate Cards -->
+
+        <div class="card shrink-0">
+          <img src="images/biz-1.png" alt="Business 1" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-2.png" alt="Business 2" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-3.png" alt="Business 3" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-4.png" alt="Business 4" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-5.png" alt="Business 5" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-6.png" alt="Business 6" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-7.png" alt="Business 7" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]" />
+        </div>
+        <div class="card shrink-0">
+          <img src="images/biz-8.png" alt="Business 8" class="w-[220px] h-[200px] border border-gray-400 rounded-[12px] object-cover max-md:w-[180px] max-md:h-[150px] max-sm:w-[150px] max-sm:h-[130px] max-[500px]:w-[110px] max-[500px]:h-[80px]"/>
+        </div> 
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+
+
+
+ <!-- Fourth Section -->
+  <section class="bg-[#f6f9fc] w-full  pb-[150px]   relative">
+    <div class="w-[95%] border-none border-amber-300 m-auto flex flex-col gap-12 items-center">
+      <div class="w-[50%] text-center max-lg:w-full max-lg:flex max-lg:justify-center">
+        <p class="text-[#1b3464] text-[35px] font-bold font-sans border-none border-amber-300 max-lg:text-[25px] max-lg:w-[50%] max-md:w-[100%]">All the tools you need to run your business with ease</p></div>
+    </div>
+
+        
+         <div class="w-full relative">
+          
+          <!-- sticky -->
+      <div class=" flex gap-12 text-[#8391af] bg-white rounded-3xl  sticky top-38 z-1 w-fit py-8 px-10 justify-center max-lg:hidden mb-[100px] m-auto mt-[60px]">
+        <p class="text-[#1b3464] bg-[#b0d3ec] p-[6px] px-[8px] rounded-2xl">Business Account</p>
+        <p class="flex items-center">Point of Sale Terminal</p>
+        <p class="flex items-center">Expense Card</p>
+        <p class="flex items-center">Working Capital Loans</p>
+      </div>
+    
+         <!--  all four images-->
+
+    <!-- first image section -->
+
+    <div class="w-[98%] m-auto flex justify-between pt-[80px] max-lg:flex-col max-lg:items-center border-none border-amber-300">
+
+    <div class="w-[40%] border-none border-amber-300 flex justify-end max-lg:order-2 max-lg:w-full max-lg:px-[15px]">
+      <div class="flex flex-col gap-[22px] w-[90%] border-none border-amber-300 max-lg:w-full max-lg:gap-[6px]">
+        <div class="bg-[#ecf2fe] w-fit px-3 py-[6px] rounded-3xl">Business Account</div>
+      <div class=" text-[#092256] text-[35px] font-medium border-none border-amber-400 w-[85%] leading-[48px] max-lg:text-[25px]">A free bank account to power your business</div>
+      <div class="text-[#4d6d96] w-[88%] max-lg:text-[13px]">Open a free bank account in your business name, in minutes. Access round the clock support, with no hidden fees and complete control over your account.</div>
+      <div class="flex gap-6">
+        <button class=" bg-[#0357ee] text-white p-3 rounded-[10px]">open an account</button>
+        <button class="text-[#0357ee] bg-white p-3 rounded-[10px]">Learn more</button>
+      </div>
+
+
+    </div>
+      </div>
+
+    <div class="w-[48%] max-lg:order-1 max-lg:w-[60%] max-lg:m-auto"> <img src="images/tool1.png" alt="woman smiling with phone"></div>
+
+    </div>
+
+
+    <!-- second image section-->
+
+     <div class="w-[98%] m-auto flex justify-between pt-[80px]  max-lg:flex-col max-lg:items-center">
+
+    <div class="w-[40%] border-none border-amber-300 flex justify-end max-lg:order-2 max-lg:w-full max-lg:px-[15px]">
+      <div class="flex flex-col gap-[15px] w-[90%] border-none border-amber-300  max-lg:w-full max-lg:gap-[6px] ">
+        <div class="bg-[#ecf2fe] w-fit px-3 py-[6px] rounded-3xl">Point of Sale Terminal</div>
+      <div class=" text-[#092256] text-[35px] font-medium border-none border-amber-400 w-[85%] leading-[48px] max-lg:text-[25px]">POS machine wey no get wahala.</div>
+      <div class="text-[#4d6d96] w-[83%] max-lg:text-[13px]">Accept card and transfer payments seamlessly, with a reliable point-of-sale terminal. Enjoy instant settlement, easy dispute resolution, and instant payments every time.</div>
+      <div class="flex gap-6">
+        <button class=" bg-[#0357ee] text-white p-3 rounded-[10px]">open an account</button>
+        <button class="text-[#0357ee] bg-white p-3 rounded-[10px]">Learn more</button>
+      </div>
+
+
+    </div>
+      </div>
+
+    <div class="w-[48%]  max-lg:order-1 max-lg:w-[60%] max-lg:m-auto"> <img src="images/tool2.png" alt="woman smiling with phone"></div>
+
+    </div>
+
+
+    <!-- Third image section -->
+
+
+    
+     <div class="w-[98%] m-auto flex justify-between pt-[80px] max-lg:flex-col max-lg:items-center">
+
+    <div class="w-[40%] border-none border-amber-300 flex justify-end max-lg:order-2 max-lg:w-full
+     max-lg:px-[15px]">
+      <div class="flex flex-col gap-[15px] w-[90%] border-none border-amber-300 max-lg:w-full max-lg:gap-[6px] ">
+        <div class="bg-[#ecf2fe] w-fit px-3 py-[6px] rounded-3xl">Expense Card</div>
+      <div class=" text-[#092256] text-[35px] font-medium border-none border-amber-400 w-[75%] leading-[48px] max-lg:text-[25px]">A secure card for your business expenses</div>
+      <div class="text-[#4d6d96] w-[83%] max-lg:text-[13px]">Order an expense card to spend and manage your business finance effectively, and get it in 48hrs. Track your business expenses and set limits for different needs.</div>
+      <div class="flex gap-6">
+        <button class=" bg-[#0357ee] text-white p-3 rounded-[10px]">Get a Card</button>
+        <button class="text-[#0357ee] bg-white p-3 rounded-[10px]">Learn more</button>
+      </div>
+
+
+    </div>
+      </div>
+
+    <div class="w-[48%]  max-lg:order-1 max-lg:w-[60%] max-lg:m-auto"> <img src="images/tool3.png" alt="woman smiling with phone"></div>
+
+    </div>
+
+
+        <!-- Fourth image section -->
+
+
+    
+     <div class="w-[98%] m-auto flex justify-between pt-[80px] max-lg:flex-col max-lg:items-center">
+
+    <div class="w-[40%] border-none border-amber-300 flex justify-end max-lg:order-2 max-lg:w-full
+     max-lg:px-[15px]">
+      <div class="flex flex-col gap-[15px] w-[90%] border-none border-amber-300 max-lg:w-full max-lg:gap-[6px] ">
+        <div class="bg-[#ecf2fe] w-fit px-3 py-[6px] rounded-3xl">Working Capital Loans</div>
+      <div class=" text-[#092256] text-[35px] font-medium border-none border-amber-400 w-[75%] leading-[48px] max-lg:text-[25px]">Flexible loans that help your business grow</div>
+      <div class="text-[#4d6d96] w-[83%] max-lg:text-[13px]">Access working capital loans to help your business grow. Easy request process with business-friendly interest rates and repayment tenures.</div>
+      <div class="flex gap-6">
+        <button class=" bg-[#0357ee] text-white p-3 rounded-[10px]">Open an account</button>
+        <button class="text-[#0357ee] bg-white p-3 rounded-[10px]">Learn more</button>
+      </div>
+
+
+    </div>
+      </div>
+
+    <div class="w-[48%] max-lg:order-1 max-lg:w-[60%] max-lg:m-auto"> <img src="images/tool4.png" alt="woman smiling with phone"></div>
+
+    </div>
+         </div>
+
+
+  </section>
+
+
+
+<!-- VIDEO-IMAGE-SECTION -->
+
+<section class="w-full py-[100px] max-md:pb-[50px]">
+<div class="w-[96%] m-auto max-md:w-[94%]">
+
+    <div class="w-full flex justify-between max-md:flex-col max-md:gap-[40px] border-none border-amber-200 max-md:w-[93%] max-md:m-auto">
+<div class="w-[25%] max-md:w-full"><p class="text-[#10295b] text-[33px] font-bold max-[1240px]:text-[28px] max-md:text-[20px]">Don't just take our word for it.</p></div>
+
+<div class=" flex gap-9 max-md:w-full">
+  <div> <img src="images/firstone.jpg" alt="rounded image" class=" rounded-[50%] object-cover w-[63px] h-[63px]
+    max-[1240px]:w-[50px] max-[1240px]:h-[50px]"></div>
+  <div> <img src="images/second-one.jpg" alt="rounded image" class="rounded-[50%]  object-cover w-[63px] h-[63px] max-[1240px]:w-[50px] max-[1240px]:h-[50px]"></div>
+  <div> <img src="images/Thirdone.jpg" alt="rounded image" class="rounded-[50%]  object-cover w-[63px] h-[63px]  max-[1240px]:w-[50px] max-[1240px]:h-[50px]"></div>
+  <div> <img src="images/Fourthone.jpg" alt="rounded image" class="rounded-[50%]  object-cover w-[63px] h-[63px] max-[1240px]:w-[50px] max-[1240px]:h-[50px]"></div>
+</div>
+  </div>
+
+  <div class="w-full flex justify-between max-md:flex-col-reverse max-md:mt-6">
+    <div class="w-[30%] flex flex-col gap-7 mt-[80px] max-[1240px]:w-[40%] max-md:w-full">
+      <div class="border-b-1 border-gray-400">
+        <p class="pb-6">Moniepoint is exceptional! Imagine someone walking into your store, and telling you they want to use Moniepoint. Moniepoint is, and has been the best.</p>
+      </div>
+
+      <div>
+        <p class="text-[#10295b] font-medium text-[20px]">Mrs Nsisong</p>
+        <p class="text-[#10295b] text-[15px]">Co-Founder, Uyai Beauty Hub</p>
+      </div>
+
+      <div class="flex gap-4 mt-[80px] max-md:hidden">
+        <p class="text-[#F8FAFD]"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 74 74" fill="none"><rect width="74" height="74" rx="37" fill="currentcolor" class="hover:text-gray-200"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M35.1892 44.6035L28.4983 37.9117C27.9758 37.3891 27.9758 36.5419 28.4983 36.0193L35.1217 29.3959C35.6443 28.8733 36.4916 28.8733 37.0141 29.3959C37.5367 29.9185 37.5367 30.7657 37.0141 31.2883L32.6751 35.6274L44.1639 35.6274C44.903 35.6274 45.5021 36.2265 45.5021 36.9655C45.5021 37.7045 44.903 38.3036 44.1639 38.3036L32.6751 38.3036L37.0816 42.7111C37.6042 43.2336 37.6042 44.0809 37.0816 44.6035C36.559 45.126 35.7118 45.126 35.1892 44.6035Z" fill="#3E588E"></path></svg></p>
+        <p class="text-[#F8FAFD]"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 74 74" fill="none"><rect width="74" height="74" rx="37" fill="currentcolor" class="hover:text-gray-200"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M38.4192 29.3958L45.1101 36.0876C45.6326 36.6101 45.6326 37.4574 45.1101 37.98L38.4867 44.6034C37.9641 45.1259 37.1168 45.1259 36.5943 44.6034C36.0717 44.0808 36.0717 43.2335 36.5943 42.711L40.9333 38.3719H29.4445C28.7054 38.3719 28.1063 37.7728 28.1063 37.0338C28.1063 36.2947 28.7054 35.6956 29.4445 35.6956H40.9333L36.5268 31.2882C36.0042 30.7656 36.0042 29.9184 36.5268 29.3958C37.0494 28.8732 37.8966 28.8732 38.4192 29.3958Z" fill="#3E588E"></path></svg></p>
+      </div>
+
+    </div>
+
+
+
+    <div class="relative  rounded-2xl  bg-center w-[800px]  bg-cover bg-no-repeat flex justify-center items-center overflow-hidden max-[1240px]:w-[60%]   border- border-amber-400 max-[900px]:w-[55%] max-md:w-full">
+      <img src="images/second-one.jpg"  class=" rounded-[12px] aspect-video w-full scale-105 object-cover max-[1240px]:w-[85%] max-[1240px]:rounded-[12px] max-[900px]:w-[90%] max-md:scale-90 max-md:w-full" alt="">
+      <button class="absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]"> <img src="images/play.svg" alt="play svg" width="65px" height="65px"></button>
+    </div>
+  </div>
+
+
+</div>
+</section>
+
+
+<!--  Section for the icons -->
+
+<section class="w-full bg-[#f8fafd] py-[150px]">
+  <div class="w-[98%] m-auto flex flex-col gap-10 max-sm:w-[95%]">
+    <div class="w-full border-none border-amber-400 flex gap-60 max-[1200px]:gap-53 max-[992px]:flex-col max-[992px]:gap-3">
+      <div class=" text-[#092256] text-[25px] font-medium ">What's more?</div>
+      <div class="text-[#3e588e] text-[22px] w-[25%] font-sans leading-7 max-[1200px]:text-[18px] max-[1200px]:leading-6 max-[992px]:text-[21px] max-[992px]:w-[34%] max-md:text-[17px] max-md:w-[40%] max-sm:w-[70%] 
+      max-[450px]:w-[80%] border-none border-amber-300 ">Explore more ways to take your business to the next level.</div>
+    </div>
+
+    <div class=" border-none border-amber-300 w-full flex justify-between max-[992px]:grid max-[992px]:grid-cols-2 max-[992px]:gap-4 max-sm:grid-cols-1">
+
+      <div class=" w-[32%] flex flex-col gap-[32px] pt-8 pb-16 rounded-[20px] bg-white opacity-150 pl-7 pr-10
+       max-[992px]:w-[100%]"> 
+        <div><img src="images/manage.svg" alt="manage svg"></div>
+        <div class="flex flex-col gap-3 max-[1200px]:gap-2">
+          <p class="text-black font-medium text-[19px]">Manage Multiple Businesses</p>
+          <p class="text-[#3e588e] text-[19px] max-[1200px]:text-[16px]">Easily handle multiple businesses in one place</p>
+        </div>
+      </div>
+
+
+      <div class=" w-[32%] flex flex-col gap-[32px] pt-8 pb-16 rounded-[20px] bg-white opacity-150 pl-7 pr-10 max-[992px]:w-[100%]"> 
+        <div><img src="images/performance.svg" alt="manage svg"></div>
+        <div class="flex flex-col gap-3 max-[1200px]:gap-2">
+          <p class="text-black font-medium text-[19px]"> Business Performance</p>
+          <p class="text-[#3e588e] text-[19px] max-[1200px]:text-[16px]">Keep your finger on the pulse of your business</p>
+        </div>
+      </div>
+
+
+      <div class=" w-[32%] flex flex-col gap-[32px] pt-8 pb-16 rounded-[20px] bg-white opacity-150 pl-7 pr-10 max-[1200px]:pr-3 max-[992px]:w-[100%]"> 
+        <div><img src="images/help.svg" alt="manage svg"></div>
+        <div class="flex flex-col gap-3 border-none border-amber-200 max-[1200px]:gap-2">
+          <p class="text-black font-medium text-[19px]">Easy help</p>
+          <p class="text-[#3e588e] text-[18px] max-[1200px]:text-[16px] border-none border-amber-400">Quick and accessible support whenever you need it</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Java Script section -->
+
+<section class="w-full bg-[#f8fafd] pb-[150px]">
+<div class="w-[98%] m-auto flex flex-col gap-20">
+
+  <div class=" w-full flex gap-10">
+      <div class="w-[35%] max-lg:w-full">
+        <p class="text-[#092256] text-[40px] font-medium max-sm:text-[30px]">
+          How to get started
+        </p>
+
+        <p class="text-[#3e588e] text-[22px]  max-sm:text-[19px]">
+          Your journey with Moniepoint starts here! Just follow these easy steps
+        </p>
+      </div>
+      <div class="max-[1024px]:hidden"> <img src="images/ng-4 (1).png" alt="" width="55px" height="55px"></div>
+  </div>
+
+  <div class="w-full flex justify-between max-lg:flex-col max-lg:gap-10 max-sm:w-[95%] max-sm:m-auto">
+
+      <div class="w-[28%] max-lg:w-full">
+        <p class=" text-[#092256] text-[21px] font-medium">Fill in your details and verify your phone number</p>
+        <p class=" text-[#3e588e] text-[14px] max-lg:text-[17px] max-sm:w-[75%] max-[400px]:w-[100%]">Provide your email and phone number and verify your phone number with an OTP.</p>
+      </div>
+
+      <div class="w-[28%] max-lg:w-full">
+        <p class=" text-[#092256] text-[21px] font-medium">Get verified with your BVN and KYC details</p>
+        <p class=" text-[#3e588e] text-[14px] max-lg:w-[75%] max-lg:text-[17px] max-sm:w-[90%]">Select username & password. Provide your BVN and KYC details and start face & ID verification. You can then provide your business name and set up a PIN for managing your account.</p>
+      </div>
+
+      <div class="w-[28%] max-lg:w-full">
+        <p class=" text-[#092256] text-[21px] font-medium">Fund your account to start making transfers.</p>
+        <p class=" text-[#3e588e] text-[14px] max-lg:text-[17px]">Top up to start making transfers.</p>
+      </div>
+
+  </div>
+
+
+
+  <div class="w-full  flex justify-center gap-6">
+     <button class=" text-white bg-[#092256] flex rounded-[12px] py-[14px] px-[28px] gap-3">
+      <div><img src="images/apple.svg" alt="apple svg" width="35px"></div>
+      <div class="flex flex-col leading-4 ">
+      <p class="text-[13px] flex justify-start">Get it on </p>
+      <p class="font-bold text-[13px]">App Store</p>
+      </div>
+     </button>
+
+
+      <button class=" text-white bg-[#092256] flex rounded-[12px] py-[14px] px-[23px] gap-2">
+      <div><img src="images/playstore.svg" alt="playstore svg" width="35px"></div>
+      <div class="flex flex-col leading-4 ">
+      <p class="text-[13px] flex justify-start">Get it on </p>
+      <p class="font-bold text-[13px]">Google Play</p>
+      </div>
+     </button>
+  </div>
+
+
+</div>
+</section>
+
+
+<!-- another section involving 3 containers  -->
+
+
+
+<section class="w-full bg-[#f8fafd] pb-[70px]">
+  <div class="w-[85%] m-auto flex flex-col gap-15 max-lg:w-[95%]">
+
+<div class="w-full flex justify-between items-center">
+
+    <div class="xl:w-[38%] max-xl:w-[45%]  flex flex-col gap-[8px] max-lg:w-[70%] border-none border-amber-300 max-md:w-[90%]">
+      <p class="text-[#092256] text-[38px] font-semibold ">Blogs & Articles</p>
+      <p class="text-[#3e588e] text-[20px]">Discover the roadmap to financial success! Stay updated with the latest tips and trends on our blog</p>
+    </div>
+
+    <div class="max-md:hidden">
+      <button class="text-white bg-[#0357ee] py-4 px-7 rounded-[12px] text-[14px]">Discover more stories</button>
+    </div>
+
+</div>
+
+
+<div class="w-full flex justify-between max-[900px]:grid max-[900px]:grid-cols-2 max-[900px]:gap-4 max-sm:grid-cols-1 max-[900px]:w-[95%] max-[900px]:m-auto ">
+
+   <div class="w-[32%] flex flex-col gap-5 max-[900px]:w-full">
+        <div><img src="images/Blogpost_savings3Artboard-1-copy-3.webp" alt="" class="rounded-[14px]"></div>
+
+        <div class="w-full flex flex-col gap-3.5">
+              <div class="flex justify-between">
+                  <p class="text-blue-600 text-[14px]">Business Life</p>
+                  <p class="text-gray-400 text-[14px] tracking-tighter">September 26, 2025</p>
+                </div>
+                <div class="text-[#092256] text-[20px] font-medium w-[85%] leading-6">Needs vs Wants:The Smart Way to Manage Money and Save in Nigeria</div>
+                <div class="text-[14px] text-gray-600">by chidinma Nwonye</div>
+            </div>
+
+    </div>
+
+     <div class="w-[32%] flex flex-col gap-5 max-[900px]:w-full max-sm:hidden">
+        <div><img src="images/Savings-Blogpost_4Cover (1).webp" alt="" class="rounded-[14px]"></div>
+
+        <div class="w-full flex flex-col gap-3.5">
+              <div class="flex justify-between">
+                  <p class="text-blue-600 text-[14px]">Business Life</p>
+                  <p class="text-gray-400 text-[14px] tracking-tighter">September 22, 2025</p>
+                </div>
+                <div class="text-[#092256] text-[20px] font-medium w-[85%] leading-6">How to Save Smarter in Nigeria (and Earn up to 18% While at it)</div>
+                <div class="text-[14px] text-gray-600">by chidinma Nwonye</div>
+            </div>
+
+    </div>
+
+     <div class="w-[32%] flex flex-col gap-5 max-[900px]:hidden">
+        <div><img src="images/Savings2_blogpostArtboard-1.webp" alt="" class="rounded-[14px]"></div>
+
+        <div class="w-full flex flex-col gap-3.5">
+              <div class="flex justify-between">
+                  <p class="text-blue-600 text-[14px]">Business Life</p>
+                  <p class="text-gray-400 text-[14px] tracking-tighter">September 22, 2025</p>
+                </div>
+                <div class="text-[#092256] text-[20px] font-medium w-[85%] leading-6">Benefits of Saving:The Smart Money Habit Nigerian's Can't Ignore</div>
+                <div class="text-[14px] text-gray-600">by chidinma Nwonye</div>
+            </div>
+
+    </div>
+
+</div>
+
+  <div class="w-full flex justify-between items-center max-sm:flex-col max-sm:gap-3">
+        <div class="flex gap-2.5">
+          <p class="w-[11px] bg-blue-700 h-[11px] rounded-[50%]"></p>
+          <p class="w-[11px] bg-blue-200 h-[11px] rounded-[50%]"></p>
+          <p class="w-[11px] bg-blue-200 h-[11px] rounded-[50%]"></p>
+          <p class="w-[11px] bg-blue-200 h-[11px] rounded-[50%]"></p>
+          <p class="w-[11px] bg-blue-200 h-[11px] rounded-[50%]"></p>
+          <p class="w-[11px] bg-blue-200 h-[11px] rounded-[50%]"></p>
+          <p class="w-[11px] bg-blue-200 h-[11px] rounded-[50%]"></p>
+          <p class="w-[11px] bg-blue-200 h-[11px] rounded-[50%]"></p>
+          <p class="w-[11px] bg-blue-200 h-[11px] rounded-[50%]"></p>
+
+
+
+        </div>
+
+    <div class="flex gap-5">
+          <p class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 74 74" fill="none"><rect width="74" height="74" rx="37" fill="currentcolor" class="hover:text-gray-200"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M35.1892 44.6035L28.4983 37.9117C27.9758 37.3891 27.9758 36.5419 28.4983 36.0193L35.1217 29.3959C35.6443 28.8733 36.4916 28.8733 37.0141 29.3959C37.5367 29.9185 37.5367 30.7657 37.0141 31.2883L32.6751 35.6274L44.1639 35.6274C44.903 35.6274 45.5021 36.2265 45.5021 36.9655C45.5021 37.7045 44.903 38.3036 44.1639 38.3036L32.6751 38.3036L37.0816 42.7111C37.6042 43.2336 37.6042 44.0809 37.0816 44.6035C36.559 45.126 35.7118 45.126 35.1892 44.6035Z" fill="#3E588E"></path></svg></p>
+          <p class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 74 74" fill="none"><rect width="74" height="74" rx="37" fill="currentcolor" class="hover:text-gray-200"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M38.4192 29.3958L45.1101 36.0876C45.6326 36.6101 45.6326 37.4574 45.1101 37.98L38.4867 44.6034C37.9641 45.1259 37.1168 45.1259 36.5943 44.6034C36.0717 44.0808 36.0717 43.2335 36.5943 42.711L40.9333 38.3719H29.4445C28.7054 38.3719 28.1063 37.7728 28.1063 37.0338C28.1063 36.2947 28.7054 35.6956 29.4445 35.6956H40.9333L36.5268 31.2882C36.0042 30.7656 36.0042 29.9184 36.5268 29.3958C37.0494 28.8732 37.8966 28.8732 38.4192 29.3958Z" fill="#3E588E"></path></svg></p>
+        </div>
+  </div>
+
+  </div>
+</section>
+
+
+<!-- Section before footer -->
+
+ <section class="w-full bg-[#0352e0] flex flex-col gap-12 items-center py-[85px] bg-[url('/images/ctaL.svg')] bg-center bg-cover ">
+ <div class="text-white text-[35px] font-medium w-[45%] text-center leading-10 max-lg:w-[75%] max-md:w-[80%] max-sm:w-[98%]">Enjoy a business solution designed to help you grow.</div>
+ <button class=" flex justify-center items-center bg-[#fdeec0] rounded-[12px] p-[9px] px-[25px] w-fit">Open an account <span class="font-bold"><i class="bi bi-arrow-right-short text-3xl"></i></span></button>
+ </section>
+
+ <!-- footer section -->
+
+ <footer class="w-full bg-[#030b1d] text-[#b4b6bc] pt-[70px] text-[14px]">
+  <div class="w-[98%] m-auto max-w-[1380px] max-lg:w-[95%]">
+    <div class="w-full flex justify-between pb-[150px] max-lg:flex-col max-lg:gap-6"> 
+
+          <div class="w-[30%] flex flex-col gap-4 max-lg:w-full">
+
+              <div><img src="images/logo-mfb-white.png" alt="" width="150px"></div>
+              <div class="text-[13px] w-[82%]">Moniepoint Microfinance Bank Limited is authorised and regulated by the Central Bank of Nigeria to offer banking services. Deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).</div>
+
+              <div class=" flex gap-6 mt-[25px]">
+                  <button class=" text-white bg-black flex rounded-[12px] h-[60px] w-[155px] gap-3 border-none border-amber-300 justify-center items-center">
+                      <div><img src="images/apple.svg" alt="apple svg" width="35px"></div>
+                      <div class="flex flex-col leading-4 ">
+                      <p class="text-[13px] flex justify-start">Get it on </p>
+                      <p class="font-bold text-[13px]">App Store</p>
+                      </div>
+                  </button>
+
+
+                  <button class=" text-white bg-black flex rounded-[12px] h-[60px] w-[153px] gap-2
+                  justify-center items-center">
+                      <div><img src="images/playstore.svg" alt="playstore svg" width="35px"></div>
+                      <div class="flex flex-col leading-4 ">
+                      <p class="text-[13px] flex justify-start">Get it on </p>
+                      <p class="font-bold text-[13px]">Google Play</p>
+                      </div>
+                  </button>
+              </div>
+
+          </div>
+          
+
+
+
+
+         <div class="flex gap-[83px] max-lg:w-full max-lg:justify-between max-lg:gap-[40px] max-sm:grid max-sm:grid-cols-2">
+
+            <div class="flex flex-col gap-2">
+                <p class="text-white text-[15px] mb-[3px]"> For Business</p>
+                <p>Business Account</p>
+                <p>Point of Sale Terminal</p>
+                <p>Loan</p>
+                <p>Expense Card</p>
+            </div>
+              
+              <div class="flex flex-col gap-2">
+                    <p class="text-white text-[15px] mb-[3px]"> For Personal</p>
+                    <p>Instant Debit Card</p>
+                    <p>Personal Account</p>
+                    <p>Payment</p>
+                    <p>Personal Banking</p>
+              </div>
+
+                <div class="flex flex-col gap-2">
+                      <p class="text-white text-[15px] mb-[3px]"> Company</p>
+                      <p>About Us</p>
+                      <p>Culture</p>
+                      <p>Join Our Team</p>
+                      <p>Press & Media</p>
+                      <p>Contact Us</p>
+                </div>
+
+                <div class="flex flex-col gap-2 mr-6">
+                    <p class="text-white text-[15px] mb-[3px]"> Resources</p>
+                    <p>Moniepoint Blog</p>
+                    <p>Help Centre</p>
+                    <p>Learning Centre</p>
+                    <p>Whistleblower Policy</p>
+                    <p>IMS Policy</p>
+                    <p>Report a Vulnerability</p>
+                    <p>Informal Economy Report</p>
+                    <p>Security Trust Centre</p>
+                </div>
+
+           </div>
+    </div>
+
+    <div class="w-full">
+      <div class="w-[98%] m-auto flex justify-between items-end pb-[80px] border-b-1 border-[#b4b6bc] max-lg:w-full">
+
+        <div class=" flex gap-[260px] w-[70%] border-none border-amber-100 items-end max-lg:flex-col
+         max-lg:gap-5 max-lg:items-start">
+
+             <div class="w-[25%] text-[14px] border-none border-amber-200 max-md:w-full">
+                <div class="w-[85%] mb-3">Plot 7A, Block 4,
+                Admirality Road,<br>Lekki Phase 1, Lagos State.</div>
+                <div>
+                    <p>
+                  support@moniepoint.com
+                   </p>
+                    <p> +234 201 888 9990</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <p class="text-white">Connect with Us</p>
+              <div class="flex gap-2">
+                <div><img src="images/linkedin.svg" alt=""></div>
+                <div><img src="images/twitter.svg" alt=""></div>
+                <div><img src="images/facebook.svg" alt=""></div>
+                <div><img src="images/instagram.svg" alt=""></div>
+                <div><img src="images/youtube.svg" alt=""></div>
+              </div>
+            </div>
+        </div>
+         
+
+            <div>
+              <p class="flex gap-3"><span><img src="images/nig.svg" alt=""></span>
+                Nigeria
+                 <span><i class="bi bi-chevron-down text-[17px] text-white"></i></span></p>
+            </div>
+
+      </div>
+    </div>
+
+    <div class="w-full mt-4 pb-[60px]">
+        <div class="w-[98%] m-auto flex flex-col gap-[60px] text-[#686d77]">
+
+          <div class="flex justify-between max-sm:flex-col-reverse max-sm:w-full border-none border-amber-200">
+                <div>Copyright © 2025, Moniepoint</div>
+
+                <div class="flex gap-[100px] max-sm:w-full max-sm:justify-between">
+                  <p>Privacy Policy</p>
+                  <p>Cookie Policy</p>
+                </div>
+          </div>
+
+          <div class="text-[12px] w-[98%] m-auto">
+            © 2025. Moniepoint is a bank with its services provided by Moniepoint MFB Limited and duly licensed by the Central Bank of Nigeria. Unauthorised reproduction or redistribution of copyrighted materials on this website and Moniepoint's digital media pages is strictly prohibited. By clicking on some of the links above, you will leave Moniepoint's website and be directed to a third-party website. The privacy practices of those third parties may differ from those of Moniepoint. We recommend you review the privacy statements of those third-party websites, as Moniepoint is not responsible for those third parties' privacy or security practices. Additional disclosures can be found in the resources section of our website.
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+  </div>
+ </footer>
+
+
+ <div class="hidden bg-black text-white py-4 text-[14px]  justify-center gap-4 w-full max-sm:text-[15px]
+  max-[550px]:flex   flex-col fixed bottom-0 ">
+<div class="max-sm:w-[80%] max-sm:text-center m-auto"> <p>This website uses cookies to enhance your experience. Learn more here:</p></div>
+<div class="flex gap-10 font-bold text-[14px] w-full justify-center ">
+  <p>Privacy Policy</p>
+  <p>Cookie Policy</p>
+</div>
+  </div>         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</body>
+</html>
